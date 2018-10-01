@@ -3,17 +3,11 @@
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "carousel",
-          "shelf"
-        ]
+        "elements": ["address"]
       },
       "extensions": {
-        "carousel": {
-          "component": "vtex.carousel/Carousel"
-        },
-        "shelf": {
-          "component": "vtex.shelf/Shelf"
+        "address": {
+          "component": "vtex.address-locator/index"
         }
       }
     }
