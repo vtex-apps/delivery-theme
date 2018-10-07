@@ -1,4 +1,13 @@
 {
+  "routes": {
+    "store/home": {
+      "path": "/"
+    },
+    "store/order": {
+      "path": "/order",
+      "context": "HomeContextProvider"
+    }
+  },
   "templates": {
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
@@ -10,6 +19,23 @@
           "component": "vtex.address-locator/index"
         }
       }
+    },
+    "order": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": ["greeting", "carousel", "last-order", "shelf"]
+      },
+      "extensions": {
+        "greeting": {
+          "component": "Greeting"
+        },
+        "carousel": {
+          "component": "vtex.carousel/Carousel"
+        },
+        "shelf": {
+          "component": "vtex.shelf/Shelf"
+        }
+      }
     }
   },
   "pages": {
@@ -17,6 +43,12 @@
       {
         "name": "Default",
         "template": "home"
+      }
+    ],
+    "store/order": [
+      {
+        "name": "Order",
+        "template": "order"
       }
     ]
   }
