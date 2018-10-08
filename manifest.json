@@ -19,6 +19,7 @@
     "vtex.address-locator": "0.x",
     "vtex.carousel": "1.x",
     "vtex.shelf": "0.x",
-    "vtex.store-graphql": "2.x"
+    "vtex.store-graphql": "2.x",
+    "vtex.store": "1.x"
   }
 }
