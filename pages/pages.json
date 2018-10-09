@@ -1,14 +1,55 @@
 {
   "routes": {
-    "store/home": {
-      "path": "/"
-    },
     "store/order": {
       "path": "/order",
       "context": "HomeContextProvider"
+    },
+    "store/home": {
+      "path": "/",
+      "landing": true
     }
   },
   "templates": {
+    "store": {
+      "component": "DeliveryLayoutContainer",
+      "context": "vtex.store@1.x/StoreContextProvider",
+      "props": {
+        "elements": [
+          "header",
+          "__children__",
+          "footer"
+        ]
+      },
+      "extensions": {
+        "header": {
+          "component": "vtex.dreamstore-header/index"
+        },
+        "header/telemarketing": {
+          "component": "vtex.telemarketing/index"
+        },
+        "header/minicart": {
+          "component": "vtex.minicart/MiniCart"
+        },
+        "header/login": {
+          "component": "vtex.login/Login"
+        },
+        "header/menu-link": {
+          "component": "vtex.menu/Menu"
+        },
+        "header/category-menu": {
+          "component": "vtex.category-menu/index"
+        },
+        "header/logo": {
+          "component": "vtex.store-components/Logo"
+        },
+        "header/search-bar": {
+          "component": "vtex.store-components/SearchBar"
+        },
+        "footer": {
+          "component": "vtex.dreamstore-footer/index"
+        }
+      }
+    },
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
@@ -39,6 +80,12 @@
     }
   },
   "pages": {
+    "store": [
+      {
+        "name": "Default",
+        "template": "store"
+      }
+    ],
     "store/home": [
       {
         "name": "Default",
