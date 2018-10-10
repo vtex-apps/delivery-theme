@@ -31,7 +31,7 @@ class MaybeAddress extends Component {
   }
 
   static defaultProps = {
-    pageToRedirect: 'store/home',
+    pageToRedirect: 'store',
   }
 
   get redirectPath() {

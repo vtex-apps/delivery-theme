@@ -56,12 +56,8 @@
     },
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
-      "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
-        "elements": [
-          "details",
-          "customizer"
-        ]
+        "elements": ["address"]
       },
       "extensions": {
         "address": {
@@ -78,8 +74,8 @@
         "carousel": {
           "component": "vtex.carousel/Carousel"
         },
-        "customizer": {
-          "component": "vtex.product-customizer/ProductCustomizer"
+        "shelf": {
+          "component": "vtex.shelf/Shelf"
         }
       }
     },
@@ -112,7 +108,13 @@
     "store/home": [
       {
         "name": "Default",
-        "template": "product"
+        "template": "home"
+      }
+    ],
+    "store/order": [
+      {
+        "name": "Order",
+        "template": "order"
       }
     ],
     "store/product": [

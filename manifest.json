@@ -15,15 +15,7 @@
   },
   "dependencies": {
     "vtex.dreamstore": "1.x",
-<<<<<<< HEAD
-    "vtex.styleguide": "6.x",
-    "vtex.product-details": "0.x",
-    "vtex.product-customizer": "0.x",
-    "vtex.carousel": "1.x",
-    "vtex.shelf": "0.x",
-=======
     "vtex.address-locator": "0.x",
->>>>>>> ecc98a86305de1de91f89abeb2df403af7ed5f48
     "vtex.store-graphql": "2.x",
     "vtex.shelf": "0.x",
     "vtex.menu": "1.x",
