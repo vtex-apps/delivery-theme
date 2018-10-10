@@ -16,6 +16,7 @@
       "props": {
         "elements": [
           "header",
+          "address-manager",
           "__children__",
           "footer"
         ]
@@ -23,6 +24,9 @@
       "extensions": {
         "header": {
           "component": "vtex.dreamstore-header/index"
+        },
+        "address-manager": {
+          "component": "vtex.address-locator/AddressManager"
         },
         "header/telemarketing": {
           "component": "vtex.telemarketing/index"
@@ -64,12 +68,9 @@
     "order": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["greeting", "carousel", "last-order", "shelf"]
+        "elements": ["carousel", "last-order", "shelf"]
       },
       "extensions": {
-        "greeting": {
-          "component": "Greeting"
-        },
         "carousel": {
           "component": "vtex.carousel/Carousel"
         },
