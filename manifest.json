@@ -29,6 +29,7 @@
     "vtex.menu": "1.x",
     "vtex.minicart": "1.x",
     "vtex.my-account": "0.x",
+    "vtex.product-customizer": "0.x",
     "vtex.product-details": "0.x",
     "vtex.product-summary": "1.x",
     "vtex.store-components": "2.x",

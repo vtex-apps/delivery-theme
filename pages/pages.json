@@ -82,6 +82,24 @@
           "component": "vtex.product-customizer/ProductCustomizer"
         }
       }
+    },
+    "product": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductContextProvider",
+      "props": {
+        "elements": [
+          "details",
+          "customizer"
+        ]
+      },
+      "extensions": {
+        "details": {
+          "component": "vtex.product-details/ProductDetails"
+        },
+        "customizer": {
+          "component": "vtex.product-customizer/ProductCustomizer"
+        }
+      }
     }
   },
   "pages": {
@@ -94,6 +112,12 @@
     "store/home": [
       {
         "name": "Default",
+        "template": "product"
+      }
+    ],
+    "store/product": [
+      {
+        "name": "Product",
         "template": "product"
       }
     ]
