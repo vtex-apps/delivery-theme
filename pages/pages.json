@@ -1,54 +1,29 @@
 {
-  "routes": {
-    "store/home": {
-      "path": "/"
-    },
-    "store/order": {
-      "path": "/order",
-      "context": "HomeContextProvider"
-    }
-  },
   "templates": {
-    "home": {
+    "product": {
       "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
-        "elements": ["address"]
+        "elements": [
+          "details",
+          "customizer"
+        ]
       },
       "extensions": {
-        "address": {
-          "component": "vtex.address-locator/index"
-        }
-      }
-    },
-    "order": {
-      "component": "vtex.render-runtime/LayoutContainer",
-      "props": {
-        "elements": ["greeting", "carousel", "last-order", "shelf"]
-      },
-      "extensions": {
-        "greeting": {
-          "component": "Greeting"
+        "details": {
+          "component": "vtex.product-details/ProductDetails"
         },
-        "carousel": {
-          "component": "vtex.carousel/Carousel"
-        },
-        "shelf": {
-          "component": "vtex.shelf/Shelf"
+        "customizer": {
+          "component": "vtex.product-customizer/ProductCustomizer"
         }
       }
     }
   },
   "pages": {
-    "store/home": [
+    "store/product": [
       {
         "name": "Default",
-        "template": "home"
-      }
-    ],
-    "store/order": [
-      {
-        "name": "Order",
-        "template": "order"
+        "template": "product"
       }
     ]
   }
