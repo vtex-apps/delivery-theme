@@ -3,8 +3,16 @@ import PropTypes from 'prop-types'
 import { graphql } from 'react-apollo'
 import { compose, branch, withProps, renderComponent } from 'recompose'
 import { FormattedMessage } from 'react-intl'
-import GreetingLoading from './GreetingLoading'
+import { withSession } from 'render'
 import { session } from 'vtex.store/Queries'
+
+import GreetingLoading from './GreetingLoading'
+
+const Wrapper = Component => props => (
+  <div className="vtex-page-loading mh7 pv4 f3 fw4 c-on-base">
+    <Component {...props} />
+  </div>
+)
 
 const Greeting = ({ profile }) => {
   if (!profile) return null
@@ -15,7 +23,7 @@ const Greeting = ({ profile }) => {
         <span className="pr2">
           <FormattedMessage id="delivery-dreamstore.greeting" />,
         </span>
-        <span className="fw6 nowrap">{data.profile.firstName}!</span>
+        <span className="fw6 nowrap">{profile.firstName}</span>
       </Fragment>
     ) : (
       <div className="nowrap">
@@ -35,18 +43,20 @@ Greeting.propTypes = {
   }),
 }
 
-const Wrapper = Component => props => (
-  <div className="vtex-page-loading mh7 pv6 f3 fw4 c-on-base">
-    <Component {...props} />
-  </div>
-)
+const WrappedLoading = Wrapper(GreetingLoading)
+
+const options = {
+  name: 'session',
+  options: () => ({ ssr: false }),
+}
 
 const enhanced = compose(
-  graphql(session, { options: { ssr: false } }),
+  withSession({ loading: <WrappedLoading /> }),
+  graphql(session, options),
   branch(
-    ({ data, loading }) => loading || data.getSession === null,
-    renderComponent(Wrapper(GreetingLoading)),
-    withProps(({ data }) => ({ profile: data.getSession.profile }))
+    ({ session, loading }) => loading || !session.getSession,
+    renderComponent(WrappedLoading),
+    withProps(({ session }) => ({ profile: session.getSession.profile }))
   )
 )
 

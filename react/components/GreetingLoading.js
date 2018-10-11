@@ -8,6 +8,7 @@ const GreetingLoading = props => (
     speed={2}
     primaryColor="#f3f3f3"
     secondaryColor="#ecebeb"
+    className="v-mid"
     {...props}
   >
     <rect rx="1" ry="1" width="300" height="32" />

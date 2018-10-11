@@ -68,9 +68,12 @@
     "order": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["carousel", "last-order", "shelf"]
+        "elements": ["greeting", "carousel", "last-order", "shelf"]
       },
       "extensions": {
+        "greeting": {
+          "component": "Greeting"
+        },
         "carousel": {
           "component": "vtex.carousel/Carousel"
         },
