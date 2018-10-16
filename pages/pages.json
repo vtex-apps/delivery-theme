@@ -14,19 +14,11 @@
       "component": "DeliveryLayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": [
-          "header",
-          "address-manager",
-          "__children__",
-          "footer"
-        ]
+        "elements": ["header", "__children__", "footer"]
       },
       "extensions": {
         "header": {
           "component": "vtex.dreamstore-header/index"
-        },
-        "address-manager": {
-          "component": "vtex.address-locator/AddressManager"
         },
         "header/telemarketing": {
           "component": "vtex.telemarketing/index"
@@ -68,9 +60,12 @@
     "order": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["greeting", "carousel", "last-order", "shelf"]
+        "elements": ["address-manager", "greeting", "carousel", "last-order", "shelf"]
       },
       "extensions": {
+        "address-manager": {
+          "component": "vtex.address-locator/AddressManager"
+        },
         "greeting": {
           "component": "Greeting"
         },
@@ -86,15 +81,9 @@
       "component": "vtex.render-runtime/LayoutContainer",
       "context": "vtex.store@1.x/ProductContextProvider",
       "props": {
-        "elements": [
-          "details",
-          "customizer"
-        ]
+        "elements": ["customizer"]
       },
       "extensions": {
-        "details": {
-          "component": "vtex.product-details/ProductDetails"
-        },
         "customizer": {
           "component": "vtex.product-customizer/ProductCustomizer"
         }

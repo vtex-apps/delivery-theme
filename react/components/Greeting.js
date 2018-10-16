@@ -17,19 +17,21 @@ const Wrapper = Component => props => (
 const Greeting = ({ profile }) => {
   if (!profile) return null
 
-  return Wrapper(
-    profile.firstName ? (
-      <Fragment>
-        <span className="pr2">
-          <FormattedMessage id="delivery-dreamstore.greeting" />,
-        </span>
-        <span className="fw6 nowrap">{profile.firstName}</span>
-      </Fragment>
-    ) : (
-      <div className="nowrap">
-        <FormattedMessage id="delivery-dreamstore.greeting" />!
-      </div>
-    )
+  return (
+    <div className="vtex-page-loading mh7 pv4 f3 fw4 c-on-base">
+      {profile.firstName ? (
+        <Fragment>
+          <span className="pr2">
+            <FormattedMessage id="delivery-dreamstore.greeting" />,
+          </span>
+          <span className="fw6 nowrap">{profile.firstName}</span>
+        </Fragment>
+      ) : (
+        <div className="nowrap">
+          <FormattedMessage id="delivery-dreamstore.greeting" />!
+        </div>
+      )}
+    </div>
   )
 }
 
