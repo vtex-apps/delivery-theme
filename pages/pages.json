@@ -1,14 +1,72 @@
 {
+  "routes": {
+    "store/order": {
+      "path": "/order",
+      "context": "HomeContextProvider"
+    },
+    "store/home": {
+      "path": "/",
+      "landing": true
+    }
+  },
   "templates": {
+    "store": {
+      "component": "DeliveryLayoutContainer",
+      "context": "vtex.store@1.x/StoreContextProvider",
+      "props": {
+        "elements": ["__children__"]
+      }
+    },
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": [
-          "carousel",
-          "shelf"
-        ]
+        "elements": ["theme", "address"]
       },
       "extensions": {
+        "theme": {
+          "component": "Theme"
+        },
+        "address": {
+          "component": "vtex.address-locator/index"
+        }
+      }
+    },
+    "order": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": ["header", "address-manager", "greeting", "carousel", "last-order", "shelf"]
+      },
+      "extensions": {
+        "header": {
+          "component": "vtex.dreamstore-header/index"
+        },
+        "header/telemarketing": {
+          "component": "vtex.telemarketing/index"
+        },
+        "header/minicart": {
+          "component": "vtex.minicart/MiniCart"
+        },
+        "header/login": {
+          "component": "vtex.login/Login"
+        },
+        "header/menu-link": {
+          "component": "vtex.menu/Menu"
+        },
+        "header/category-menu": {
+          "component": "vtex.category-menu/index"
+        },
+        "header/logo": {
+          "component": "vtex.store-components/Logo"
+        },
+        "header/search-bar": {
+          "component": "vtex.store-components/SearchBar"
+        },
+        "address-manager": {
+          "component": "vtex.address-locator/AddressManager"
+        },
+        "greeting": {
+          "component": "Greeting"
+        },
         "carousel": {
           "component": "vtex.carousel/Carousel"
         },
@@ -16,13 +74,43 @@
           "component": "vtex.shelf/Shelf"
         }
       }
+    },
+    "product": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "context": "vtex.store@1.x/ProductContextProvider",
+      "props": {
+        "elements": ["customizer"]
+      },
+      "extensions": {
+        "customizer": {
+          "component": "vtex.product-customizer/ProductCustomizer"
+        }
+      }
     }
   },
   "pages": {
+    "store": [
+      {
+        "name": "Default",
+        "template": "store"
+      }
+    ],
     "store/home": [
       {
         "name": "Default",
         "template": "home"
+      }
+    ],
+    "store/order": [
+      {
+        "name": "Order",
+        "template": "order"
+      }
+    ],
+    "store/product": [
+      {
+        "name": "Product",
+        "template": "product"
       }
     ]
   }
