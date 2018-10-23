@@ -1,8 +1,14 @@
 html {
-    height: 100%;
+  height: 100%;
 }
 
-.render-route-store-home .vtex-address-locator {
-    background-color: #eee;
-    height: 100%;
+.render-route-store-home {
+  background-color: #eee;
+  height: 100%;
+}
+
+/* Hides header on home page */
+.render-route-store-home .vtex-header,
+.render-route-store-home .vtex-modal-root .vtex-top-menu {
+  display: none;
 }
