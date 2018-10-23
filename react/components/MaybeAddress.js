@@ -20,6 +20,7 @@ import Redirect from './Redirect'
  * With the bonus that it can be done on SSR, something that querying
  * the user profile can not do
  */
+/** TODO - This is a theme app, we shouldn't have React components on this type of app. Redesign this solution after MVP. */
 class MaybeAddress extends Component {
   static propTypes = {
     orderFormContext: contextPropTypes,
