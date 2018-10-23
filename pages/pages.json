@@ -1,5 +1,9 @@
 {
   "routes": {
+    "store": {
+      "path": "/",
+      "context": "StoreContextProvider"
+    },
     "store/order": {
       "path": "/order",
       "context": "HomeContextProvider"

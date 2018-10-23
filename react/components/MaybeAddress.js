@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'recompose'
 import { orderFormConsumer, contextPropTypes } from 'vtex.store/OrderFormContext'
-import { withRuntimeContext, Loading } from 'render'
+import { withRuntimeContext } from 'render'
 
 import Redirect from './Redirect'
 
