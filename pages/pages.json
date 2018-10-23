@@ -14,27 +14,7 @@
       "component": "DeliveryLayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": ["__children__"]
-      }
-    },
-    "home": {
-      "component": "vtex.render-runtime/LayoutContainer",
-      "props": {
-        "elements": ["theme", "address"]
-      },
-      "extensions": {
-        "theme": {
-          "component": "Theme"
-        },
-        "address": {
-          "component": "vtex.address-locator/index"
-        }
-      }
-    },
-    "order": {
-      "component": "vtex.render-runtime/LayoutContainer",
-      "props": {
-        "elements": ["header", "address-manager", "greeting", "carousel", "last-order", "shelf"]
+        "elements": ["header", "__children__", "footer"]
       },
       "extensions": {
         "header": {
@@ -61,6 +41,28 @@
         "header/search-bar": {
           "component": "vtex.store-components/SearchBar"
         },
+        "footer": {
+          "component": "vtex.dreamstore-footer/index"
+        }
+      }
+    },
+    "home": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": ["address"]
+      },
+      "extensions": {
+        "address": {
+          "component": "vtex.address-locator/index"
+        }
+      }
+    },
+    "order": {
+      "component": "vtex.render-runtime/LayoutContainer",
+      "props": {
+        "elements": ["address-manager", "greeting", "carousel", "last-order", "shelf"]
+      },
+      "extensions": {
         "address-manager": {
           "component": "vtex.address-locator/AddressManager"
         },
