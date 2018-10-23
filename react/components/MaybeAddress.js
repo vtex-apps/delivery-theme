@@ -73,7 +73,7 @@ class MaybeAddress extends Component {
 
     const redirectPath = this.getRedirectPath()
 
-    if (redirectPath)
+    if (redirectPath) {
       return (
         <Redirect
           to={redirectPath}
@@ -81,8 +81,9 @@ class MaybeAddress extends Component {
           shouldReturn={redirectPath === homePage}
         />
       )
+    }
 
-    return children ? children : null
+    return children || null
   }
 }
 
