@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-.render-route-store-home {
+.render-route-store-home .vtex-address-locator {
     background-color: #eee;
     height: 100%;
 }

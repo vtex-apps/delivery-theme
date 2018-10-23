@@ -31,12 +31,8 @@ class MaybeAddress extends Component {
   }
 
   static defaultProps = {
-    pageToRedirect: 'store',
-  }
-
-  get redirectPath() {
-    const { runtime, pageToRedirect } = this.props
-    return runtime.pages[pageToRedirect].path
+    homePage: 'store/home',
+    orderPage: 'store/order'
   }
 
   get isLandingPage() {
@@ -44,24 +40,46 @@ class MaybeAddress extends Component {
     return !!runtime.pages[runtime.page].landing
   }
 
-  shouldRedirect() {
+  getRedirectPath = () => {
     const {
       runtime,
-      pageToRedirect,
+      homePage,
+      orderPage,
       orderFormContext: { orderForm, loading },
     } = this.props
 
-    if (loading) return false
+    if (loading) return ''
 
     const isIdentified = orderForm.shippingData && orderForm.shippingData.address
-    return runtime.page !== pageToRedirect && !this.isLandingPage && !isIdentified
+    if (runtime.page !== homePage && !this.isLandingPage && !isIdentified) {
+      /**
+       * If the page to be accessed is not "public" aka a landing page or the home page
+       * and the user is not identified via orderForm, redirect it to the home page
+       */
+      return runtime.pages[homePage].path
+    } else if (runtime.page === homePage && isIdentified) {
+      /**
+       * is the user lands on the home page for some reason but
+       * it's already identified, redirect to the order page
+       */
+      return runtime.pages[orderPage].path
+    }
+    return ''
   }
 
   render() {
-    const { orderFormContext, runtime, children, ...parentProps } = this.props
+    const { runtime, homePage, children } = this.props
 
-    if (this.shouldRedirect())
-      return <Redirect to={this.redirectPath} navigate={runtime.navigate} shouldReturn />
+    const redirectPath = this.getRedirectPath()
+
+    if (redirectPath)
+      return (
+        <Redirect
+          to={redirectPath}
+          navigate={runtime.navigate}
+          shouldReturn={redirectPath === homePage}
+        />
+      )
 
     return children ? children : null
   }
