@@ -1,0 +1,42 @@
+{
+  "vendor": "vtex",
+  "name": "delivery-dreamstore",
+  "version": "0.2.0",
+  "builders": {
+    "pages": "0.x",
+    "react": "2.x"
+  },
+  "mustUpdateAt": "2018-09-05",
+  "categories": [],
+  "registries": [
+    "smartcheckout"
+  ],
+  "settingsSchema": {},
+  "scripts": {
+    "postreleasy": "vtex publish --verbose"
+  },
+  "dependencies": {
+    "vtex.dreamstore": "1.x",
+    "vtex.address-locator": "0.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.shelf": "0.x",
+    "vtex.menu": "1.x",
+    "vtex.minicart": "1.x",
+    "vtex.my-account": "0.x",
+    "vtex.product-customizer": "0.x",
+    "vtex.product-details": "0.x",
+    "vtex.product-summary": "1.x",
+    "vtex.store-components": "2.x",
+    "vtex.search-result": "2.x",
+    "vtex.category-menu": "1.x",
+    "vtex.breadcrumb": "0.x",
+    "vtex.login": "1.x",
+    "vtex.styleguide": "7.x",
+    "vtex.carousel": "1.x",
+    "vtex.store": "1.x",
+    "vtex.product-kit": "0.x",
+    "vtex.telemarketing": "1.x",
+    "vtex.dreamstore-header": "1.x",
+    "vtex.dreamstore-footer": "1.x"
+  }
+}
