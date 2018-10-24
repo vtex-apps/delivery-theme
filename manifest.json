@@ -1,14 +1,16 @@
 {
   "vendor": "vtex",
   "name": "delivery-dreamstore",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
   },
   "mustUpdateAt": "2018-09-05",
   "categories": [],
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "settingsSchema": {},
   "scripts": {
     "postreleasy": "vtex publish --verbose"
