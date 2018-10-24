@@ -60,7 +60,7 @@ class MaybeAddress extends Component {
       return runtime.pages[homePage].path
     } else if (runtime.page === homePage && isIdentified) {
       /**
-       * is the user lands on the home page for some reason but
+       * If the user lands on the home page for some reason but
        * it's already identified, redirect to the order page
        */
       return runtime.pages[orderPage].path
@@ -78,7 +78,7 @@ class MaybeAddress extends Component {
         <Redirect
           to={redirectPath}
           navigate={runtime.navigate}
-          shouldReturn={redirectPath === homePage}
+          shouldReturn={redirectPath === runtime.pages[homePage].path}
         />
       )
     }
