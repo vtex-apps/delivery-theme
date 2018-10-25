@@ -1,4 +1,12 @@
 {
+  "extensions": {
+    "store/header": {
+      "component": "vtex.dreamstore-header/index",
+      "props": {
+        "leanWhen": "store/home"
+      }
+    }
+  },
   "routes": {
     "store": {
       "path": "/",
