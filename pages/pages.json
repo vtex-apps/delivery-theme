@@ -26,7 +26,7 @@
       "component": "DeliveryLayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": ["header", "__children__"]
+        "elements": ["header", "__children__", "footer"]
       },
       "extensions": {
         "header": {
@@ -52,6 +52,9 @@
         },
         "header/search-bar": {
           "component": "vtex.store-components/SearchBar"
+        },
+        "footer": {
+          "component": "vtex.dreamstore-footer/index"
         }
       }
     },
