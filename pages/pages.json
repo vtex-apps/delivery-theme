@@ -65,7 +65,7 @@
       },
       "extensions": {
         "address": {
-          "component": "vtex.address-locator/index"
+          "component": "vtex.address-locator/Tabs"
         }
       }
     },
@@ -76,7 +76,7 @@
       },
       "extensions": {
         "address-manager": {
-          "component": "vtex.address-locator/AddressManager"
+          "component": "vtex.address-locator/Manager"
         },
         "greeting": {
           "component": "Greeting"
