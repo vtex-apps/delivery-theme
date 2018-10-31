@@ -1,0 +1,7 @@
+{
+  "store/product/details": {
+    "props": {
+      "delivery": true
+    }
+  }
+}
