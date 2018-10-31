@@ -17,7 +17,7 @@ class DeliveryLayoutContainer extends Component {
           <meta name="theme-color" content={pwaManifest.theme_color} />
           <script type="text/javascript" src="/pwa/workers/register.js?v=1" />
           <link rel="manifest"
-            href={`/_v/private/assets/v1/published/${APP_LOCATOR}@${appMetadata.version}/public/pwa/manifest.json`}
+            href={`/_v/private/assets/v1/linked/${APP_LOCATOR}@${appMetadata.version}/public/pwa/manifest.json`}
           />
         </Helmet>
         <MaybeAddress>
