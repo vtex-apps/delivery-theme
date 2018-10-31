@@ -72,7 +72,7 @@
     "order": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["address-manager", "greeting", "carousel", "last-order", "shelf"]
+        "elements": ["address-manager", "greeting", "carousel", "rebuy", "shelf"]
       },
       "extensions": {
         "address-manager": {
@@ -83,6 +83,9 @@
         },
         "carousel": {
           "component": "vtex.carousel/Carousel"
+        },
+        "rebuy": {
+          "component": "vtex.rebuy/index"
         },
         "shelf": {
           "component": "vtex.shelf/Shelf"
