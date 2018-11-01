@@ -20,9 +20,7 @@ class DeliveryLayoutContainer extends Component {
             href={`/_v/private/assets/v1/linked/${APP_LOCATOR}@${appMetadata.version}/public/pwa/manifest.json`}
           />
         </Helmet>
-        <MaybeAddress>
-          <LayoutContainer {...this.props} />
-        </MaybeAddress>
+        <LayoutContainer {...this.props} />
       </Fragment>
     )
   }
