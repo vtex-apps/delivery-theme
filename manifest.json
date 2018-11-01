@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "delivery-dreamstore",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "builders": {
     "pages": "0.x",
     "react": "2.x"
@@ -37,6 +37,7 @@
     "vtex.product-kit": "0.x",
     "vtex.telemarketing": "1.x",
     "vtex.dreamstore-header": "1.x",
-    "vtex.dreamstore-footer": "1.x"
+    "vtex.dreamstore-footer": "1.x",
+    "vtex.rebuy": "0.x"
   }
 }
