@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { LayoutContainer, NoSSR } from 'render'
+import { LayoutContainer } from 'render'
 import { orderFormConsumer } from 'vtex.store/OrderFormContext'
 
 import '../global.css'
-import Modal from './Modal';
 
 const xor = (a, b) => (!a && !b) || (a && b)
 
@@ -25,13 +24,7 @@ class HeaderLayoutContainer extends Component {
 
   render() {
     return !this.isIdentified()
-      ? (
-        <NoSSR>
-          <Modal>
-            <LayoutContainer {...this.props} />
-          </Modal>
-        </NoSSR>
-      )
+      ? (<LayoutContainer {...this.props} />)
       : null
   }
 }
