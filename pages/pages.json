@@ -1,20 +1,13 @@
 {
   "extensions": {
     "store/header": {
-      "component": "vtex.dreamstore-header/index",
-      "props": {
-        "leanWhen": "store/home"
-      }
+      "component": "vtex.dreamstore-header/index"
     }
   },
   "routes": {
     "store": {
       "path": "/",
       "context": "StoreContextProvider"
-    },
-    "store/order": {
-      "path": "/order",
-      "context": "HomeContextProvider"
     },
     "store/home": {
       "path": "/",
@@ -61,17 +54,6 @@
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["address"]
-      },
-      "extensions": {
-        "address": {
-          "component": "vtex.address-locator/Tabs"
-        }
-      }
-    },
-    "order": {
-      "component": "vtex.render-runtime/LayoutContainer",
-      "props": {
         "elements": ["address-manager", "greeting", "carousel", "rebuy", "shelf"]
       },
       "extensions": {
@@ -116,12 +98,6 @@
       {
         "name": "Default",
         "template": "home"
-      }
-    ],
-    "store/order": [
-      {
-        "name": "Order",
-        "template": "order"
       }
     ],
     "store/product": [
