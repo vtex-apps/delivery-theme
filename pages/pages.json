@@ -38,7 +38,10 @@
           "component": "vtex.menu/Menu"
         },
         "header/category-menu": {
-          "component": "vtex.category-menu/index"
+          "component": "vtex.category-menu/index",
+          "props": {
+            "showDepartmentsCategory": false
+          }
         },
         "header/logo": {
           "component": "vtex.store-components/Logo"
