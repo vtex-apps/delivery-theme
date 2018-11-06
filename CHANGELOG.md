@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.4.1] - 2018-11-06
+
 ## [0.3.4] - 2018-11-06
 ### Changed
 - Move `Greeting` to right before `Rebuy`
