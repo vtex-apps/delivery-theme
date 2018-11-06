@@ -79,7 +79,7 @@
           "component": "vtex.address-locator/Manager"
         },
         "greeting": {
-          "component": "Greeting"
+          "component": "vtex.store-components/Greeting"
         },
         "carousel": {
           "component": "vtex.carousel/Carousel"
