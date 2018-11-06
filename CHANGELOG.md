@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.3.3] - 2018-11-06
+### Removed
+- Removed `Greeting` that was ported to `vtex.store-components`
+
 ## [0.3.2] - 2018-11-01
 ### Added
 - Add `vtex.rebuy` extension to order page
