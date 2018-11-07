@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.4.4] - 2018-11-07
+### Removed
+- Removed subcategories from categories menu
+
 ## [0.4.3] - 2018-11-06
 ### Removed
 - Removed "Departments" tab from categories menu
