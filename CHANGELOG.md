@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.4.5] - 2018-11-07
+
 ### Changed
 - Add a loading screen while loading the order form context, before deciding whether the user should be redirected to the address screen or not
 
