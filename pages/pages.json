@@ -19,7 +19,7 @@
       "component": "DeliveryLayoutContainer",
       "context": "vtex.store@1.x/StoreContextProvider",
       "props": {
-        "elements": ["header", "__children__", "footer"]
+        "elements": ["custom-theme", "header", "__children__", "footer"]
       },
       "extensions": {
         "header": {
