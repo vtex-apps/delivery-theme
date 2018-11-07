@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { compose } from 'recompose'
 import { orderFormConsumer, contextPropTypes } from 'vtex.store/OrderFormContext'
 import { withRuntimeContext } from 'render'
+import { Spinner } from 'vtex.styleguide'
 
 import Redirect from './Redirect'
 
@@ -69,7 +70,20 @@ class MaybeAddress extends Component {
   }
 
   render() {
-    const { runtime, homePage, children } = this.props
+    const {
+      runtime,
+      homePage,
+      children,
+      orderFormContext : {loading},
+    } = this.props
+
+    if (loading) {
+      return (
+        <div className="flex items-center justify-center fixed absolute--fill z-999 bg-white c-action-primary">
+          <Spinner />
+        </div>
+      )
+    }
 
     const redirectPath = this.getRedirectPath()
 
