@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.4.8] - 2018-11-28
+
 ### Changed
 - Update dreamstore header to major 2.x
 
