@@ -2,6 +2,9 @@
   "extensions": {
     "store/header": {
       "component": "vtex.dreamstore-header/index"
+    },
+    "store/__icons": {
+      "component": "vtex.dreamstore/IconPack"
     }
   },
   "routes": {
