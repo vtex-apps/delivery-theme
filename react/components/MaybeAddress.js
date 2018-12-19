@@ -77,13 +77,6 @@ class MaybeAddress extends Component {
       orderFormContext : {loading},
     } = this.props
 
-    if (loading) {
-      return (
-        <div className="flex items-center justify-center fixed absolute--fill z-999 bg-white c-action-primary">
-          <Spinner />
-        </div>
-      )
-    }
 
     const redirectPath = this.getRedirectPath()
 

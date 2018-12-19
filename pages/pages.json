@@ -58,20 +58,20 @@
     "home": {
       "component": "vtex.render-runtime/LayoutContainer",
       "props": {
-        "elements": ["address-manager", "carousel", "greeting", "rebuy", "shelf"]
+        "elements": ["address-manager", "carousel", "rebuy", "shelf"]
       },
       "extensions": {
         "address-manager": {
           "component": "vtex.address-locator/Manager"
-        },
-        "greeting": {
-          "component": "vtex.store-components/Greeting"
         },
         "carousel": {
           "component": "vtex.carousel/Carousel"
         },
         "rebuy": {
           "component": "vtex.rebuy/index"
+        },
+        "rebuy/greeting": {
+          "component": "vtex.store-components/Greeting"
         },
         "shelf": {
           "component": "vtex.shelf/Shelf"
