@@ -16,7 +16,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.dreamstore": "2.x",
+    "vtex.dreamstore": "2.0.0-beta.2",
     "vtex.address-locator": "0.x",
     "vtex.store-graphql": "2.x",
     "vtex.shelf": "1.x",
