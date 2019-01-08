@@ -6,15 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+- Add support to store builder.
 
 ## [0.5.2] - 2019-01-08
 ### Fixed
 - Remove MaybeAddress from DeliveryLayoutContainer
 
 ## [0.5.1] - 2018-11-30
-
 ### Fixed
-
 - Adds exenv to dependencies, fixing release bug
 
 ## [0.5.0] - 2018-11-30
