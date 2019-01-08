@@ -15,7 +15,9 @@
   },
   "store.product": {
     "blocks": [
-      "product-customizer"
+      "header.full",
+      "product-details.customizer",
+      "footer"
     ]
   },
   "store.search": {
