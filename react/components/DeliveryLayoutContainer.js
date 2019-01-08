@@ -4,7 +4,6 @@ import { LayoutContainer, Helmet } from 'render'
 import '../global.css'
 import appMetadata from '../../manifest.json'
 import pwaManifest from '../../public/pwa/manifest.json'
-import MaybeAddress from './MaybeAddress'
 
 const APP_LOCATOR = 'vtex.delivery-dreamstore'
 
@@ -20,9 +19,7 @@ class DeliveryLayoutContainer extends Component {
             href={`/_v/private/assets/v1/linked/${APP_LOCATOR}@${appMetadata.version}/public/pwa/manifest.json`}
           />
         </Helmet>
-        <MaybeAddress>
-          <LayoutContainer {...this.props} />
-        </MaybeAddress>
+        <LayoutContainer {...this.props} />
       </Fragment>
     )
   }
