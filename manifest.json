@@ -15,7 +15,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "1.x",
+    "vtex.store": "1.35.2-beta.0",
     "vtex.store-graphql": "2.x",
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.3.2-beta",
@@ -27,8 +27,8 @@
     "vtex.login": "2.2.1-beta",
     "vtex.my-account": "1.x",
     "vtex.product-kit": "1.1.1-beta",
-    "vtex.product-customizer": "0.x",
-    "vtex.address-locator": "0.x",
-    "vtex.rebuy": "0.x"
+    "vtex.product-customizer": "0.2.13-beta",
+    "vtex.address-locator": "0.6.4-beta",
+    "vtex.rebuy": "0.2.1-beta"
   }
 }
