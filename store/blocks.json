@@ -1,6 +1,9 @@
 {
   "store": {
-    "blocks": [],
+    "blocks": [
+      "header",
+      "footer"
+    ],
     "wrapper": "DeliveryLayoutContainer"
   },
   "store.home": {
