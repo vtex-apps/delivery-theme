@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { compose } from 'recompose'
-import { orderFormConsumer, contextPropTypes } from 'vtex.store/OrderFormContext'
+import { orderFormConsumer, contextPropTypes } from 'vtex.store-resources/OrderFormContext'
 import { withRuntimeContext } from 'render'
-import { Spinner } from 'vtex.styleguide'
 
 import Redirect from './Redirect'
 
@@ -74,7 +73,7 @@ class MaybeAddress extends Component {
       runtime,
       homePage,
       children,
-      orderFormContext : {loading},
+      orderFormContext: { loading },
     } = this.props
 
 
