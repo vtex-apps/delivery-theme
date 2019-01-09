@@ -1,11 +1,4 @@
 {
-  "store": {
-    "blocks": [
-      "header",
-      "footer"
-    ],
-    "wrapper": "DeliveryLayoutContainer"
-  },
   "store.home": {
     "blocks": [
       "header.full",

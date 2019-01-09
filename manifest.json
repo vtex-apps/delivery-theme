@@ -28,7 +28,7 @@
     "vtex.my-account": "1.x",
     "vtex.product-kit": "1.1.1-beta",
     "vtex.product-customizer": "0.2.13-beta",
-    "vtex.address-locator": "0.6.4-beta",
+    "vtex.address-locator": "0.6.4-beta.0",
     "vtex.rebuy": "0.2.1-beta"
   }
 }
