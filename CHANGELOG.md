@@ -7,14 +7,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.0-beta] - 2019-01-10
+### Fixed
+- Remove `DeliveryLayoutContainer` and `store` block.
+- Remove unused code.
+
+### Changed
+- Add support to store builder.
+- Bump apps dependencies.
+
 ## [0.5.2] - 2019-01-08
 ### Fixed
 - Remove MaybeAddress from DeliveryLayoutContainer
 
 ## [0.5.1] - 2018-11-30
-
 ### Fixed
-
 - Adds exenv to dependencies, fixing release bug
 
 ## [0.5.0] - 2018-11-30
