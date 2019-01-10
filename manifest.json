@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "delivery-dreamstore",
-  "version": "0.5.2-beta.1",
+  "version": "1.0.0-beta",
   "builders": {
     "store": "0.x"
   },
@@ -14,7 +14,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0-beta",
+    "vtex.store": "2.0.0-beta.0",
     "vtex.store-graphql": "2.x",
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.x",

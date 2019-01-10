@@ -3,8 +3,8 @@
     "blocks": [
       "header.full",
       "address-manager",
-      "carousel",
       "rebuy",
+      "carousel",
       "shelf",
       "footer"
     ]
@@ -12,6 +12,8 @@
   "store.product": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "product-details.customizer",
       "footer"
     ]
@@ -19,6 +21,8 @@
   "store.search": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "search-result",
       "footer"
     ]
@@ -26,6 +30,8 @@
   "store.search#brand": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "search-result",
       "footer"
     ]
@@ -33,6 +39,8 @@
   "store.search#department": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "search-result",
       "footer"
     ]
@@ -40,6 +48,8 @@
   "store.search#category": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "search-result",
       "footer"
     ]
@@ -47,6 +57,8 @@
   "store.search#subcategory": {
     "blocks": [
       "header.full",
+      "address-manager",
+      "rebuy",
       "search-result",
       "footer"
     ]
@@ -54,6 +66,7 @@
   "store.account": {
     "blocks": [
       "header.full",
+      "rebuy",
       "my-account",
       "footer"
     ]
