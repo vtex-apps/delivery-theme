@@ -8,10 +8,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 ### Fixed
 - Remove `DeliveryLayoutContainer` and `store` block.
+- Remove unused code.
 
-## [0.5.2-beta] - 2019-01-08
 ### Changed
 - Add support to store builder.
+- Bump apps dependencies.
 
 ## [0.5.2] - 2019-01-08
 ### Fixed
