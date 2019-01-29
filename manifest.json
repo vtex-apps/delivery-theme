@@ -6,15 +6,11 @@
     "store": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
-  "categories": [],
-  "registries": [
-    "smartcheckout"
-  ],
   "scripts": {
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0-beta.6",
+    "vtex.store": "2.0.0-rc.0",
     "vtex.store-graphql": "2.x",
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.x",
