@@ -10,7 +10,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0-rc.0",
+    "vtex.store": "2.x",
     "vtex.store-graphql": "2.x",
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.x",
