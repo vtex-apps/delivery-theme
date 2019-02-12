@@ -22,7 +22,7 @@
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
     "vtex.product-kit": "1.x",
-    "vtex.product-customizer": "1.x",
+    "vtex.product-customizer": "2.x",
     "vtex.address-locator": "1.x",
     "vtex.rebuy": "1.x"
   }

@@ -29,7 +29,7 @@
   "store.search#department": {
     "blocks": [
       "address-manager",
-=      "search-result"
+      "search-result"
     ]
   },
   "store.search#category": {
