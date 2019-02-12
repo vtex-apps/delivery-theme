@@ -6,26 +6,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
-
-## [1.0.0-beta.3] - 2019-01-29
-
-## [1.0.0-beta.2] - 2019-01-24
-
-## [1.0.0-beta.1] - 2019-01-22
-- Update `blocks.json` after changes on syntax.
-
-## [1.0.0-beta.0] - 2019-01-19
-### Changed
-- Update store to `vtex.store@2.0.0-beta.4`.
-
-## [1.0.0-beta] - 2019-01-10
-### Fixed
-- Remove `DeliveryLayoutContainer` and `store` block.
-- Remove unused code.
-
-### Changed
+### Added
 - Add support to store builder.
+
+### Changed
+- Update `blocks.json` after changes on syntax.
 - Bump apps dependencies.
+
+### Fixed
+- Remove unused code.
 
 ## [0.5.2] - 2019-01-08
 ### Fixed
