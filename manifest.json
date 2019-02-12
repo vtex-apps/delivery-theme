@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "delivery-dreamstore",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0",
   "builders": {
     "store": "0.x"
   },
@@ -10,7 +10,7 @@
     "postreleasy": "vtex publish --verbose"
   },
   "dependencies": {
-    "vtex.store": "2.0.0-rc.0",
+    "vtex.store": "2.x",
     "vtex.store-graphql": "2.x",
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.x",
@@ -22,7 +22,7 @@
     "vtex.login": "2.x",
     "vtex.my-account": "1.x",
     "vtex.product-kit": "1.x",
-    "vtex.product-customizer": "1.x",
+    "vtex.product-customizer": "2.x",
     "vtex.address-locator": "1.x",
     "vtex.rebuy": "1.x"
   }

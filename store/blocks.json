@@ -10,7 +10,6 @@
   "store.product": {
     "blocks": [
       "address-manager",
-      "rebuy",
       "product-details.customizer"
     ]
   },
@@ -24,35 +23,31 @@
   "store.search#brand": {
     "blocks": [
       "address-manager",
-      "rebuy",
       "search-result"
     ]
   },
   "store.search#department": {
     "blocks": [
       "address-manager",
-      "rebuy",
       "search-result"
     ]
   },
   "store.search#category": {
     "blocks": [
       "address-manager",
-      "rebuy",
       "search-result"
     ]
   },
   "store.search#subcategory": {
     "blocks": [
       "address-manager",
-      "rebuy",
       "search-result"
     ]
   },
   "store.account": {
     "blocks": [
-      "rebuy",
-      "my-account"    ]
+      "my-account"
+    ]
   },
   "store.login": {
     "blocks": [
