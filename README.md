@@ -1,2 +1,2 @@
-# delivery-dreamstore
-VTEX delivery store based on Dreamstore app
+# Delivery Theme
+VTEX delivery store based on store framework
