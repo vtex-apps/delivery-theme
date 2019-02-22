@@ -53,5 +53,13 @@
     "blocks": [
       "login-content"
     ]
+  },
+  "minicart": {
+    "blocks": [
+      "product-summary"
+    ],
+    "props": {
+      "showShippingCost": true
+    }
   }
 }
