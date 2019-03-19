@@ -3,7 +3,9 @@
   "name": "delivery-dreamstore",
   "version": "1.0.0",
   "builders": {
-    "store": "0.x"
+    "store": "0.x",
+    "react": "3.x",
+    "styles": "1.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -15,7 +17,7 @@
     "vtex.store-resources": "0.x",
     "vtex.store-header": "2.x",
     "vtex.store-footer": "2.x",
-    "vtex.styleguide": "8.x",
+    "vtex.styleguide": "9.x",
     "vtex.search-result": "3.x",
     "vtex.carousel": "2.x",
     "vtex.shelf": "1.x",
@@ -23,7 +25,7 @@
     "vtex.my-account": "1.x",
     "vtex.product-kit": "1.x",
     "vtex.product-customizer": "2.x",
-    "vtex.address-locator": "1.x",
+    "vtex.address-locator": "2.x",
     "vtex.rebuy": "1.x"
   }
 }

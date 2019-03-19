@@ -1,0 +1,13 @@
+{
+  "store.address": {
+    "before": [
+      "header"
+    ],
+    "required": [
+      "address-manager"
+    ]
+  },
+  "challenge.address": {
+    "component": "AddressChallenge"
+  }
+}
