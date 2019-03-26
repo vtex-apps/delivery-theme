@@ -1,8 +1,0 @@
-{
-  "name": "vtex.delivery-dreamstore",
-  "dependencies": {
-    "apollo-client": "^2.5.1",
-    "ramda": "^0.26.1",
-    "recompose": "^0.30.0"
-  }
-}
