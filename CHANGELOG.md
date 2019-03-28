@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.0.1] - 2019-03-28
+### Changed
+- Use address-locator 2.x
+
 ## [1.0.0] - 2019-02-12
 ### Added
 - Add support to store builder.

@@ -1,48 +1,66 @@
 {
+  "store.address": {
+    "blocks": [
+      "address-manager"
+    ]
+  },
   "store.home": {
     "blocks": [
-      "address-manager",
       "rebuy",
       "carousel",
       "shelf"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.product": {
     "blocks": [
-      "address-manager",
       "product-details.customizer"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.search": {
     "blocks": [
-      "address-manager",
-      "rebuy",
       "search-result"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.search#brand": {
     "blocks": [
-      "address-manager",
       "search-result"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.search#department": {
     "blocks": [
-      "address-manager",
       "search-result"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.search#category": {
     "blocks": [
-      "address-manager",
       "search-result"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.search#subcategory": {
     "blocks": [
-      "address-manager",
       "search-result"
-    ]
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
   },
   "store.account": {
     "blocks": [
@@ -53,5 +71,20 @@
     "blocks": [
       "login-content"
     ]
+  },
+  "header.full": {
+    "blocks": [
+      "telemarketing",
+      "logo",
+      "minicart",
+      "login",
+      "category-menu",
+      "search-bar",
+      "user-address.address-manager"
+    ],
+    "props": {
+      "showSearchBar": true,
+      "showLogin": true
+    }
   }
 }
