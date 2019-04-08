@@ -1,10 +1,9 @@
 {
   "vendor": "vtex",
   "name": "delivery-dreamstore",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "builders": {
     "store": "0.x",
-    "react": "3.x",
     "styles": "1.x"
   },
   "mustUpdateAt": "2018-09-05",
