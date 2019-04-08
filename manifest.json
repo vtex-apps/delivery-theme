@@ -4,7 +4,6 @@
   "version": "1.0.1",
   "builders": {
     "store": "0.x",
-    "react": "3.x",
     "styles": "1.x"
   },
   "mustUpdateAt": "2018-09-05",
