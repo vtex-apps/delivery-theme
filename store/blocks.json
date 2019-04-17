@@ -80,11 +80,17 @@
       "login",
       "category-menu",
       "search-bar",
-      "user-address.address-manager"
+      "user-address"
     ],
     "props": {
       "showSearchBar": true,
       "showLogin": true
     }
+  },
+  "user-address": {
+    "blocks": ["modal"]
+  },
+  "modal": {
+    "children": ["change-address"]
   }
 }
