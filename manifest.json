@@ -28,5 +28,6 @@
     "vtex.rebuy": "1.x",
     "vtex.modal": "0.x",
     "vtex.store-components": "3.x"
-  }
+  },
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

@@ -91,6 +91,9 @@
     "blocks": ["modal"]
   },
   "modal": {
-    "children": ["change-address"]
+    "children": ["change-address"],
+    "props": {
+      "showTopBar": false
+    }
   }
 }
