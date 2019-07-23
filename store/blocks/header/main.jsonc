@@ -1,0 +1,26 @@
+{
+  "header": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+  "header.full": {
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile"
+    ]
+  },
+
+  "user-address": {
+    "blocks": ["modal"]
+  },
+
+  "modal": {
+    "children": ["change-address"],
+    "props": {
+      "showTopBar": false
+    }
+  }
+
+}

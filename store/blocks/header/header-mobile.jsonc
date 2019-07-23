@@ -1,0 +1,54 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "header-row#3-mobile",
+      "header-row#4-mobile"
+    ]
+  },
+
+  "header-row#1-mobile": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-mobile": {
+    "children": [
+      "logo#mobile",
+      "header-spacer",
+      "locale-switcher",
+      "login",
+    ],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": "true"
+    }
+  },
+
+  "header-row#3-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu",
+      "header-spacer",
+      "search-bar",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+
+  "header-row#4-mobile": {
+    "children": [
+      "user-address"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  }
+}
