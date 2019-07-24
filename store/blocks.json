@@ -6,14 +6,27 @@
   },
   "store.home": {
     "blocks": [
-      "rebuy",
-      "carousel",
-      "shelf"
+      "search-result#home"
     ],
     "parent": {
       "challenge": "challenge.address"
     }
   },
+
+
+  "search-result#home": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8
+      }
+    }
+  },
+
   "store.product": {
     "blocks": [
       "product-details.customizer"
@@ -71,5 +84,16 @@
     "blocks": [
       "login-content"
     ]
+  },
+  "store.custom#for-sharing": {
+    "blocks": [
+      "search-result#home"
+    ]
+  },
+  "store.custom#for-one": {
+    "blocks": [
+      "search-result#home"
+    ]
   }
+
 }
