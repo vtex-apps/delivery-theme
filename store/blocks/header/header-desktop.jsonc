@@ -1,7 +1,6 @@
 {
   "header-layout.desktop": {
     "children": [
-      "header-row#1-desktop",
       "header-row#2-desktop",
       "header-row#3-desktop"    ]
   },
@@ -22,7 +21,7 @@
       "user-address",
       "header-spacer",
       "locale-switcher",
-      "login",
+      "login"
     ],
     "props": {
       "blockClass": "menu-link",
@@ -41,5 +40,17 @@
       "sticky": true,
       "blockClass": "main-header"
     }
+  },
+
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://essentialimpact.com/wp-content/uploads/2018/10/Pizza-Hut-Logo.jpg",
+      "width": "180"
+    }
   }
+
+
 }

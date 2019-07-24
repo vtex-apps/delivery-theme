@@ -1,7 +1,6 @@
 {
   "header-layout.mobile": {
     "children": [
-      "header-row#1-mobile",
       "header-row#2-mobile",
       "header-row#3-mobile",
       "header-row#4-mobile"
@@ -20,13 +19,11 @@
   "header-row#2-mobile": {
     "children": [
       "logo#mobile",
-      "header-spacer",
       "locale-switcher",
-      "login",
+      "login"
     ],
     "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
+      "blockClass": "menu-link"
     }
   },
 
@@ -34,7 +31,6 @@
     "children": [
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
-      "search-bar",
       "minicart"
     ],
     "props": {
@@ -49,6 +45,15 @@
     ],
     "props": {
       "fullWidth": true
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://essentialimpact.com/wp-content/uploads/2018/10/Pizza-Hut-Logo.jpg",
+      "width": "100"
     }
   }
 }
