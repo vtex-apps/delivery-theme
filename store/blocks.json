@@ -27,6 +27,38 @@
     }
   },
 
+  "search-result#for-sharing": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "mapField":"productClusterIds",
+        "queryField":"138"
+      }
+    }
+  },
+
+
+
+  "search-result#for-one": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "mapField":"productClusterIds",
+        "queryField":"139"
+      }
+    }
+  },
+
   "store.product": {
     "blocks": [
       "product-details.customizer"
@@ -53,7 +85,7 @@
   },
   "store.search#department": {
     "blocks": [
-      "search-result"
+      "search-result#home"
     ],
     "parent": {
       "challenge": "challenge.address"
@@ -87,12 +119,12 @@
   },
   "store.custom#for-sharing": {
     "blocks": [
-      "search-result#home"
+      "search-result#for-sharing"
     ]
   },
   "store.custom#for-one": {
     "blocks": [
-      "search-result#home"
+      "search-result#for-one"
     ]
   }
 
