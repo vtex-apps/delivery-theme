@@ -1,9 +1,11 @@
+
 {
   "store.address": {
     "blocks": [
       "address-manager"
     ]
   },
+
   "store.home": {
     "blocks": [
       "search-result#home"
@@ -13,19 +15,24 @@
     }
   },
 
-
   "search-result#home": {
     "blocks":[
       "gallery"
     ],
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByPriceDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8
       }
     }
   },
+  "store.custom#for-sharing": {
+    "blocks": [
+      "search-result#for-sharing"
+    ]
+  },
+
 
   "search-result#for-sharing": {
     "blocks":[
@@ -33,7 +40,7 @@
     ],
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByPriceDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
         "mapField":"productClusterIds",
@@ -42,7 +49,11 @@
     }
   },
 
-
+  "store.custom#for-one": {
+    "blocks": [
+      "search-result#for-one"
+    ]
+  },
 
   "search-result#for-one": {
     "blocks":[
@@ -50,7 +61,7 @@
     ],
     "props": {
       "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
+        "orderByField": "OrderByPriceDESC",
         "hideUnavailableItems": true,
         "maxItemsPerPage": 8,
         "mapField":"productClusterIds",
@@ -116,16 +127,5 @@
     "blocks": [
       "login-content"
     ]
-  },
-  "store.custom#for-sharing": {
-    "blocks": [
-      "search-result#for-sharing"
-    ]
-  },
-  "store.custom#for-one": {
-    "blocks": [
-      "search-result#for-one"
-    ]
   }
-
 }

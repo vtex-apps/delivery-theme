@@ -19,7 +19,6 @@
   "header-row#2-mobile": {
     "children": [
       "logo#mobile",
-      "locale-switcher",
       "login"
     ],
     "props": {
@@ -53,7 +52,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://essentialimpact.com/wp-content/uploads/2018/10/Pizza-Hut-Logo.jpg",
-      "width": "100"
+      "width": "120"
     }
   }
 }

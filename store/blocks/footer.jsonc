@@ -1,0 +1,80 @@
+{
+  "footer": {
+    "blocks": [
+      "footer-layout.desktop",
+      "footer-layout.mobile"    ]
+  },
+
+  "footer-layout.desktop": {
+    "children": [
+      "footer-row#1",
+      "footer-row#2"
+    ]
+  },
+
+  "footer-layout.mobile": {
+    "children": [
+      "footer-row#1",
+      "footer-row#2"
+    ]
+  },
+
+  "footer-row#1": {
+    "children": [
+      "accepted-payment-methods",
+      "footer-spacer",
+      "social-networks"
+    ],
+    "props": {
+      "inverted": "true"
+    }
+  },
+
+  "accepted-payment-methods": {
+    "props": {
+      "paymentMethods": [
+        "MasterCard", "Visa", "Diners Club"
+      ]
+    }
+  },
+
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "name": "Facebook",
+          "url": ""
+        },
+        {
+          "name": "Instagram",
+          "url": ""
+        },
+        {
+          "name": "Twitter",
+          "url": ""
+        },
+        {
+          "name": "Youtube",
+          "url": ""
+        }
+      ]
+    }
+  },
+
+  "footer-row#2": {
+    "children": [
+      "rich-text#footer"
+    ],
+    "props": {
+      "inverted": "true"
+    }
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "text": "Delivery Theme Demo developed by VTEX",
+      "blockClass": "footer"
+    }
+  }
+
+}
