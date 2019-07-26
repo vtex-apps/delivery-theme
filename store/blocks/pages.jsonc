@@ -70,14 +70,6 @@
     }
   },
 
-  "store.product": {
-    "blocks": [
-      "product-details.customizer"
-    ],
-    "parent": {
-      "challenge": "challenge.address"
-    }
-  },
   "store.search": {
     "blocks": [
       "search-result"
