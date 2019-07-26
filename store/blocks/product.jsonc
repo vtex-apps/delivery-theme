@@ -1,0 +1,114 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-main",
+      "shelf.relatedProducts"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
+    },
+    "children": [
+      "flex-layout.col#product-image",
+      "flex-layout.col#product-price"
+    ]
+  },
+  "flex-layout.col#product-image": {
+    "props": {
+      "width": "60%",
+      "rowGap": 0,
+      "blockClass": "image-teste"
+    },
+    "children": ["product-images"]
+  },
+  "flex-layout.col#product-price": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0
+    },
+    "children": [
+      "product-name",
+      "product-rating-summary",
+      "product-price#product-details",
+      "product-separator",
+      "product-quantity",
+      "product-identifier.product",
+      "sku-selector",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share",
+      "product-assembly-options",
+      "sticky-layout#buy-button"
+    ]
+  },
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": true
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingBottom": 2
+    },
+    "children": ["buy-button"]
+  },
+  "sticky-layout#buy-button": {
+    "props": {
+      "position": "bottom"
+    },
+    "children": ["flex-layout.row#buy-button"]
+  },
+  "product-assembly-options": {
+    "children": [
+      "assembly-option-item-image",
+      "assembly-option-item-name",
+      "assembly-option-item-price",
+      "assembly-option-item-quantity-selector",
+      "assembly-option-item-children-description",
+      "assembly-option-item-customize#first-level"
+    ]
+  },
+  "assembly-option-item-customize#first-level": {
+    "children": [
+      "assembly-option-item-image",
+      "assembly-option-item-name",
+      "assembly-option-item-price",
+      "assembly-option-item-quantity-selector",
+      "assembly-option-item-children-description",
+      "assembly-option-item-customize#sec-level"
+    ]
+  },
+  "assembly-option-item-customize#sec-level": {
+    "children": [
+      "assembly-option-item-image",
+      "assembly-option-item-name",
+      "assembly-option-item-price",
+      "assembly-option-item-quantity-selector"
+    ]
+  },
+  "buy-button": {
+    "props": {
+      "showItemsPrice": true
+    }
+  }
+}
