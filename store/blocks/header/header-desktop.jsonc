@@ -1,8 +1,10 @@
 {
   "header-layout.desktop": {
     "children": [
+      "header-row#1-desktop",
       "header-row#2-desktop",
-      "header-row#3-desktop"    ]
+      "header-row#3-desktop"
+    ]
   },
 
   "header-row#1-desktop": {
@@ -17,20 +19,6 @@
   "header-row#2-desktop": {
     "children": [
       "logo#desktop",
-      "header-spacer",
-      "user-address",
-      "header-spacer",
-      "locale-switcher",
-      "login"
-    ],
-    "props": {
-      "blockClass": "menu-link",
-      "inverted": "true"
-    }
-  },
-
-  "header-row#3-desktop": {
-    "children": [
       "vtex.menu@2.x:menu#category-menu",
       "header-spacer",
       "search-bar",
@@ -42,6 +30,18 @@
     }
   },
 
+  "header-row#3-desktop": {
+    "children": [
+      "user-address",
+      "header-spacer",
+      "locale-switcher",
+      "login"
+    ],
+    "props": {
+      "blockClass": "menu-link",
+      "inverted": true
+    }
+  },
 
   "logo#desktop": {
     "props": {
@@ -51,6 +51,4 @@
       "width": "180"
     }
   }
-
-
 }

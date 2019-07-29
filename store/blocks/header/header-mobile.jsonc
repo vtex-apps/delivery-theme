@@ -1,6 +1,7 @@
 {
   "header-layout.mobile": {
     "children": [
+      "header-row#1-mobile",
       "header-row#2-mobile",
       "header-row#3-mobile",
       "header-row#4-mobile"
@@ -18,8 +19,9 @@
 
   "header-row#2-mobile": {
     "children": [
+      "header-spacer",
       "logo#mobile",
-      "login"
+      "header-spacer"
     ],
     "props": {
       "blockClass": "menu-link"
