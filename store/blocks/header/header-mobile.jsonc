@@ -45,7 +45,8 @@
       "user-address"
     ],
     "props": {
-      "fullWidth": true
+      "fullWidth": true,
+      "inverted": true
     }
   },
 
