@@ -1,0 +1,61 @@
+{
+  "header-layout.mobile": {
+    "children": [
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "header-row#3-mobile",
+      "header-row#4-mobile"
+    ]
+  },
+
+  "header-row#1-mobile": {
+    "children": [
+      "telemarketing"
+    ],
+    "props": {
+      "fullWidth": true
+    }
+  },
+
+  "header-row#2-mobile": {
+    "children": [
+      "header-spacer",
+      "logo#mobile",
+      "header-spacer"
+    ],
+    "props": {
+      "blockClass": "menu-link"
+    }
+  },
+
+  "header-row#3-mobile": {
+    "children": [
+      "vtex.menu@2.x:menu#category-menu",
+      "header-spacer",
+      "minicart"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+
+  "header-row#4-mobile": {
+    "children": [
+      "user-address"
+    ],
+    "props": {
+      "fullWidth": true,
+      "inverted": true
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
+      "width": "120"
+    }
+  }
+}

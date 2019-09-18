@@ -1,5 +1,11 @@
 {
   "store.address": {
     "path": "/address"
+  },
+  "store.custom#for-sharing":{
+    "path": "/for-sharing"
+  },
+  "store.custom#for-one":{
+    "path": "/for-one"
   }
 }

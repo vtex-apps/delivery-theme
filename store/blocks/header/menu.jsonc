@@ -1,0 +1,58 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "children": [
+      "menu-item#for-sharing",
+      "menu-item#for-one",
+      "menu-item#drinks"
+    ]
+  },
+
+  "menu-item#for-sharing": {
+    "props": {
+      "id": "menu-item-for-sharing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/for-sharing",
+        "noFollow": true,
+        "tagTitle": "For Sharing",
+        "text": "For Sharing"
+      }
+    }
+  },
+
+  "menu-item#for-one": {
+    "props": {
+      "id": "menu-item-for-one",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/for-one",
+        "noFollow": true,
+        "tagTitle": "For One",
+        "text": "For One"
+      }
+    }
+  },
+
+  "menu-item#drinks": {
+    "props": {
+      "id": "menu-item-drinks",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/drinks/d",
+        "noFollow": true,
+        "tagTitle": "Drinks",
+        "text": "Drinks"
+      }
+    }
+  }
+
+}

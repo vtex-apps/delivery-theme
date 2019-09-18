@@ -1,0 +1,123 @@
+
+{
+  "store.address": {
+    "blocks": [
+      "address-manager"
+    ]
+  },
+
+  "store.home": {
+    "blocks": [
+      "search-result#home"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+
+  "search-result#home": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByPriceDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8
+      }
+    }
+  },
+  "store.custom#for-sharing": {
+    "blocks": [
+      "search-result#for-sharing"
+    ]
+  },
+
+
+  "search-result#for-sharing": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByPriceDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "mapField":"productClusterIds",
+        "queryField":"138"
+      }
+    }
+  },
+
+  "store.custom#for-one": {
+    "blocks": [
+      "search-result#for-one"
+    ]
+  },
+
+  "search-result#for-one": {
+    "blocks":[
+      "gallery"
+    ],
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByPriceDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "mapField":"productClusterIds",
+        "queryField":"139"
+      }
+    }
+  },
+
+  "store.search": {
+    "blocks": [
+      "search-result"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+  "store.search#brand": {
+    "blocks": [
+      "search-result"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+  "store.search#department": {
+    "blocks": [
+      "search-result#home"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+  "store.search#category": {
+    "blocks": [
+      "search-result"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+  "store.search#subcategory": {
+    "blocks": [
+      "search-result"
+    ],
+    "parent": {
+      "challenge": "challenge.address"
+    }
+  },
+  "store.account": {
+    "blocks": [
+      "my-account"
+    ]
+  },
+  "store.login": {
+    "blocks": [
+      "login-content"
+    ]
+  }
+}
