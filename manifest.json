@@ -4,7 +4,8 @@
   "version": "1.0.5",
   "builders": {
     "store": "0.x",
-    "styles": "1.x"
+    "styles": "1.x",
+    "docs": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
