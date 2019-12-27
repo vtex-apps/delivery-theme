@@ -4,7 +4,8 @@
   "version": "1.0.5",
   "builders": {
     "store": "0.x",
-    "styles": "1.x"
+    "styles": "1.x",
+    "docs": "0.x"
   },
   "mustUpdateAt": "2018-09-05",
   "scripts": {
@@ -27,7 +28,10 @@
     "vtex.address-locator": "2.x",
     "vtex.rebuy": "1.x",
     "vtex.modal": "0.x",
-    "vtex.store-components": "3.x"
+    "vtex.store-components": "3.x",
+    "vtex.telemarketing": "2.x",
+    "vtex.minicart": "2.x",
+    "vtex.category-menu": "2.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
